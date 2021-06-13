@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <title>Priyanshu Corona Map</title>
+</head>
+<body>
+
+    <nav>
+        <h2>CORONA LIVE UPDATE</h2>
+    </nav>
+    <marquee width="100%" direction="left" height="10%">
+        This website is for educational purposes only.
+    </marquee>
+    
+
+    <div id='map'></div>
+
+    <footer>
+        Copyrights &copy;2021 | Corona live               
+        <p>Last updated : 27 March 2020 ( For permanent results )</p>
+    </footer>
+    
+</body>
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoicHJpeWFuc2h1NTA4IiwiYSI6ImNrcHZjbmlubDB1bWIycXF3eXphOHloYWcifQ.V_CN6Hq3RB1B3p_Wk6d0yw';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    zoom:2,
+    center: [80,50]
+  });
+</script>
+
+
+<script src="index.js"></script>
+</html>
