@@ -1,6 +1,13 @@
 function updateMap()
 {
-    fetch("../data.json")
+    handleGetJson(){
+  fetch('/data.json', {
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+
+    })
     .then(response => response.json())
     .then(rsp => {
 
@@ -33,6 +40,9 @@ function updateMap()
     })
     
 }
+    
+    
+    
 
 let interval=2000;
 
